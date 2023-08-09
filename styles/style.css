@@ -9,7 +9,7 @@
 
   body {
     background-color: #081b29;
-    padding-top: 10%;
+    padding-top: 20%;
     background-color: linear-gradient(to right, red, yellow);
     overflow-x: hidden;
 }
@@ -67,7 +67,7 @@
   .intro2 img{
     min-width: 100%;
     width: 100%;
-    transition: transform 3s;
+    transition: 3s;
 
     animation-name: slide;
     animation-duration: 3s;
@@ -99,16 +99,50 @@
         height: 50vh;
     }
     .intro{
-        width: 100%;
+      text-align: center;
+      min-width: 100%;
+        font-size: 4vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20%;
+    }
+    .intro h1{
+      font-size: 5vw;
+    }
+    .about{
+      object-fit: contain;
     }
     .intro2{
         padding: 5% 0%;
         padding-right: 10%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30%;
     }
     .intro2 img{
-        min-width: 100%;
+        min-width: 300px;
+        height: 190px;
         width: 100%;
-        padding: 0% 10%;
+        margin: 0% -30%;
+        object-fit: contain;
         animation-name: slideRes;
+      
+      }
+      hr{
+        position: fixed;
+        bottom: 10%;
+        width: 80%;
+      }
+      .logo{
+        display: none;
+      }
+      nav{
+        padding: 2%;
+      }
+      header nav ul li a{
+        font-size: 4vw;
       }
   }
