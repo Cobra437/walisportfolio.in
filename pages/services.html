@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../static/service.png" type="image/png" />
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300&family=Carrois+Gothic&family=Poppins:wght@200;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Services</title>
+    <style>
+      body h1 {
+        font-size: 3vw;
+      }
+      body {
+        text-align: center;
+      }
+      .services p {
+        padding: 5%;
+        font-size: 1.8vw;
+      }
+      .skills p {
+        padding: 5%;
+        font-size: 1.8vw;
+      }
+      .services h1 {
+        padding-top: 10%;
+        padding-top: 5%;
+        font-size: 2vw;
+      }
+      .skills h1 {
+        padding-top: 5%;
+        font-size: 2vw;
+      }
+
+      .services {
+        display: flex;
+        width: 100%;
+        padding: 5%;
+        gap: 1%;
+      }
+      .services div {
+        box-sizing: content-box;
+        padding: 1%;
+        border: 0.1vw solid white;
+        border-radius: 1vh;
+        max-width: 30%;
+        text-align: center;
+      }
+      .services img {
+        max-width: 60%;
+        padding: 5%;
+      }
+      .skills {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 5%;
+      }
+      .skills div {
+        border: 0.1vw solid white;
+        box-sizing: content-box;
+        border-radius: 1vh;
+        max-width: 25%;
+        min-width: 25%;
+        text-align: center;
+        padding: 2%;
+        margin: 1%;
+      }
+      .skills img {
+        max-width: 60%;
+        min-width: 60%;
+      }
+      @media screen and (max-width: 800px) {
+        body{
+          padding-top: 12%;
+        }
+      }
+      @media screen and (max-width: 600px) {
+        body{
+          padding-top: 15%;
+        }
+      }
+      @media screen and (max-width: 400px) {
+        body{
+          padding-top: 18%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+        <nav>
+          <h1 class="logo"><a href="" class="logo">Wali</a></h1>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="services.html" class="active">Services</a></li>
+            <li><a href="faq.html">About</a></li>
+          </ul>
+        </nav>
+      </header>
+    <h1>Services</h1>
+<div class="services">
+  <div class="service">
+    <img src="../Images/web dev.png" />
+    <h1>Web Development</h1>
+    <p>backend and frontend</p>
+  </div>
+  <div class="service">
+    <img src="../Images/coding.png" />
+    <h1>Script Writing</h1>
+    <p>General pupose scripting</p>
+  </div>
+</div>
+
+<h1>Skills</h1>
+
+<div class="skills">
+  <div>
+    <img src="../Images/python.png" />
+    <h1>Python</h1>
+  </div>
+
+  <div>
+    <img src="../Images/javascript.png" />
+    <h1>Javascript</h1>
+  </div>
+
+  <div>
+    <img
+      src="../Images/html and css.png"
+      style="padding-bottom: 10%; min-width: 80%"
+    />
+    <h1>Html and CSS</h1>
+  </div>
+
+  <div>
+    <img src="../Images/flask.png" style="min-width: 90%; border-radius: 1vh" />
+    <h1>Flask</h1>
+  </div>
+</div>
+  </body>
+</html>

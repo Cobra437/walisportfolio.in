@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/common.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300&family=Carrois+Gothic&family=Poppins:wght@200;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Wali - Portfolio</title>
+
+    <style>
+      .preloader {
+        position: fixed;
+        background-image: url(Images/preloader.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 20%;
+        width: 100%;
+        height: 100%;
+        background-color: #081b29;
+        top: 0;
+        z-index: 100;
+      }
+      .offline {
+        display: none;
+        position: fixed;
+        background-image: url(Images/offline.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 20%;
+        width: 100%;
+        height: 100%;
+        background-color: #081b29;
+        top: 0;
+        z-index: 100;
+      }
+      hr {
+        margin: 0% 10%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="preloader"></div>
+    <div class="offline"></div>
+    <header>
+      <nav>
+        <h1 class="logo"><a href="" class="logo">Wali</a></h1>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="pages/projects.html">Projects</a></li>
+          <li><a href="pages/services.html">Services</a></li>
+          <li><a href="pages/faq.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="container">
+      <div class="intro">
+        <h1>Hi, My Name is Wali</h1>
+        <h4>
+          I am a developer with experience in different languages I do different
+          projects to Improve my skills for full-time projects
+        </h4>
+      </div>
+
+      <div class="intro2">
+        <img src="Images/robot.png" />
+      </div>
+    </section>
+    <hr />
+  </body>
+
+  <script>
+    let preloader = document.querySelector(".preloader");
+    let offline = document.querySelector(".offline");
+
+    setInterval(check,1000)
+    function check() {
+      let status = navigator.onLine;
+      if (!status) {
+        offline.style.display = "block";
+      }
+      else {
+        offline.style.display = "none";
+      }
+    }
+    window.addEventListener("load", function () {
+      preloader.style.display = "none";
+    });
+  </script>
+</html>

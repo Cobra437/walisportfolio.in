@@ -1,0 +1,41 @@
+.questions{
+    padding: 2vh 1vh;
+    text-align: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #0c2130;
+    gap: 10px;
+}
+.questions h1{
+    font-size: 5vw;
+    color: salmon;
+}
+.allQuestion{
+    box-sizing: content-box;
+    min-height: 10%;
+    font-size: 2.3vw;
+    margin: 2vh 5vh;
+    padding: 2%;
+    background-color: rgb(123, 61, 71);
+}
+.A{
+    padding: 10px;
+    font-size: 1.5vw;
+    color: bisque;
+}
+.view{
+    display: none;
+    transition: 0.5s ease;
+}
+.questions button{
+    background-color: salmon;
+    border: 2px solid rgb(255, 255, 255);
+    color: #0c2130;
+    padding: 1vh;
+    text-align: center;
+}
+.questions button a{
+    font-size: 2vw;
+    color: #0c2130;
+    text-decoration: none;
+}

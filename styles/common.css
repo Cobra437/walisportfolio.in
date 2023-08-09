@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: #ebeded;
+
+  }
+
+  body {
+    background-color: #081b29;
+    padding-top: 10%;
+    background-color: linear-gradient(to right, red, yellow);
+    overflow-x: hidden;
+}
+
+  .logo {
+    font-size: 4vw;
+    padding: 10px 0px;
+  }
+  header nav {
+    display: flex;
+    top: 0%;
+    justify-content: space-around;
+    position: fixed;
+
+    width: 100%;
+    height: auto;
+    max-height: 15%;
+    background-color: #081b29;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.155);
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  nav ul li {
+    padding: 2vw 2vw;
+  }
+  nav a {
+    text-decoration: none;
+    font-size: 1.8vw;
+  }
+  nav ul li a {
+    border: 1px solid transparent;
+    border-radius: 0.5vh;
+    padding: 10%;
+  }
+  nav ul li a:hover{
+    background: transparent;
+    border: 1px solid salmon;
+    color: salmon;
+    transition: 0.5s ease;
+  }
+  nav ul li a:active{
+    background-color: transparent;
+    border:2px solid white;
+    color: white;
+  }
+  .active{
+    border: 1px solid white;
+    background-color: rgb(89, 203, 242);
+    color: #081b29;
+
+    border: 1px solid lightgreen;
+    background-color: transparent;
+    color: lightgreen;
+  }
+  ::selection {
+    color: coral;
+    background-color: #0b3a5c;
+  }
