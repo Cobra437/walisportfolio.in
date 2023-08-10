@@ -1,148 +1,236 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-    color: #ebeded;
-
-  }
-
-  body {
-    background-color: #081b29;
-    padding-top: 20%;
-    background-color: linear-gradient(to right, red, yellow);
-    overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: #ebeded;
 }
 
-  .logo {
-    font-size: 4vw;
-    padding: 10px 0px;
-  }
-  header nav {
-    display: flex;
-    top: 0%;
-    justify-content: space-around;
-    position: fixed;
+body {
+  background-color: #081b29;
+  padding-top: 20%;
+  background-color: linear-gradient(to right, red, yellow);
+  overflow-x: hidden;
+}
 
-    width: 100%;
-    height: auto;
-    max-height: 15%;
-    background-color: #081b29;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.155);
+.logo {
+  font-size: 4vw;
+  padding: 10px 0px;
+}
+header nav {
+  display: flex;
+  top: 0%;
+  justify-content: space-around;
+  position: fixed;
+
+  width: 100%;
+  height: auto;
+  max-height: 15%;
+  background-color: #081b29;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.155);
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li {
+  padding: 2vw 2vw;
+}
+nav a {
+  text-decoration: none;
+  font-size: 1.8vw;
+}
+.container {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  height: 80vh;
+}
+.intro {
+  max-width: 50%;
+  padding: 0% 5%;
+  font-size: 1.8vw;
+}
+.intro h1 {
+  color: deepskyblue;
+  font-size: 3.5vw;
+}
+.intro2 {
+  width: 60%;
+  padding: 0% 5%;
+}
+.intro2 img {
+  min-width: 100%;
+  width: 100%;
+  transition: 3s;
+
+  animation-name: slide;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+
+  user-select: none;
+}
+.intro2 img:hover {
+  opacity: 0.2;
+  transition: 5s;
+}
+
+::selection {
+  color: coral;
+  background-color: #0b3a5c;
+}
+
+.contact {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  z-index: 1;
+}
+.contact form{
+
+  margin-top: 51%;
+  position: fixed;
+
+
+  background-color: #0b3a5c;
+
+  border: 1px solid white;
+  border-radius: 1vw;
+
+  padding: 5%;
+
+  max-width: 50%;
+  min-width: 50%;
+  min-height: 65vh;
+
+  font-size: 1.5vw;
+}
+.contact form input,
+.contact form textarea{
+  width: 90%;
+  font-size: 1.2vw;
+  color: black;
+  outline: none;
+  padding: 1vw;
+  margin: 0.5vw 0vw;
+  
+  border-radius: 1vw;
+  border: none;
+}
+.contact form button{
+  background-color: coral;
+  border: none;
+  border-radius: 1vw;
+  padding: 1vw 3vw;
+  font-size: 1.5vw;
+
+  margin: 3% 33%;
+}
+.contact h1{
+  color: lightgreen;
+  padding-bottom: 4%;
+}
+.container button{
+  background-color: deepskyblue;
+  color: #0b3a5c;
+  border: none;
+  border-radius: 1vw;
+  padding: 3% 5%;
+  margin: 5% 0%;
+  font-size: 1.5vw;
+  cursor: pointer;
+}
+#closeContact{
+  position: absolute;
+  color: rgb(255, 95, 80);
+  top: 2%;
+  right: 2%;
+  background-color: rgb(109, 172, 220);
+  border-radius: 0vw 1vw;
+  padding: 0.5% 1.5%;
+
+  font-size: 2vw;
+  cursor: pointer;
+}
+@keyframes slide {
+  50% {
+    transform: translateY(50px);
   }
-  nav ul {
-    display: flex;
-    list-style: none;
+}
+@keyframes slideRes {
+  50% {
+    transform: translateY(10px);
   }
-  nav ul li {
-    padding: 2vw 2vw;
-  }
-  nav a {
-    text-decoration: none;
-    font-size: 1.8vw;
-  }
+}
+
+@media screen and (max-width: 500px) {
   .container {
-    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
     align-items: center;
-
-    width: 100%;
-    height: 80vh;
-
+    height: 50vh;
   }
-  .intro{
-    max-width: 50%;
-    padding: 0% 5%;
-    font-size: 1.8vw;
-
-  }
-  .intro h1{
-    color: deepskyblue;
-    font-size: 3.5vw;
-
-  }
-  .intro2{
-    width: 60%;
-    padding: 0% 5%;
-  }
-  .intro2 img{
+  .intro {
+    text-align: center;
     min-width: 100%;
+    font-size: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+  }
+  .intro h1 {
+    font-size: 5vw;
+  }
+  .about {
+    object-fit: contain;
+  }
+  .intro2 {
+    padding: 5% 0%;
+    padding-right: 10%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40%;
+  }
+  .intro2 img {
+    min-width: 300px;
+    height: 190px;
     width: 100%;
-    transition: 3s;
-
-    animation-name: slide;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-
-    user-select: none;
+    margin: 0% -30%;
+    object-fit: contain;
+    animation-name: slideRes;
   }
-  .intro2 img:hover{
-    opacity: 0.2;
-    transition: 5s;
+  hr {
+    position: fixed;
+    bottom: 10%;
+    width: 80%;
   }
-
-::selection{
-    color: coral;
-    background-color: #0b3a5c;
-}
-@keyframes slide{
-    50%{transform: translateY(50px);}
-}
-@keyframes slideRes{
-    50%{transform: translateY(10px);}
-}
-
-  @media screen and (max-width: 500px) {
-    .container{
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-        height: 50vh;
-    }
-    .intro{
-      text-align: center;
-      min-width: 100%;
-        font-size: 4vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-top: 20%;
-    }
-    .intro h1{
-      font-size: 5vw;
-    }
-    .about{
-      object-fit: contain;
-    }
-    .intro2{
-        padding: 5% 0%;
-        padding-right: 10%;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-top: 30%;
-    }
-    .intro2 img{
-        min-width: 300px;
-        height: 190px;
-        width: 100%;
-        margin: 0% -30%;
-        object-fit: contain;
-        animation-name: slideRes;
-      
-      }
-      hr{
-        position: fixed;
-        bottom: 10%;
-        width: 80%;
-      }
-      .logo{
-        display: none;
-      }
-      nav{
-        padding: 2%;
-      }
-      header nav ul li a{
-        font-size: 4vw;
-      }
+  .logo {
+    display: none;
   }
+  nav {
+    padding: 2%;
+  }
+  header nav ul li a {
+    font-size: 4vw;
+  }
+  #contactBtn{
+    position: fixed;
+    margin-top: 50%;
+    font-size: 4vw;
+  }
+  .contact{
+    height: 50px !important;
+    width: 100%;
+    margin-top: 30%;
+  }
+  .contact form{
+    height: 50px !important;
+  }
+}

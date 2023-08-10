@@ -47,6 +47,32 @@
   <body>
     <div class="preloader"></div>
     <div class="offline"></div>
+    <div id="contact" class="contact" style="display: none;">
+      <form action="https://formsubmit.co/anonymousbhai302@gmail.com" method="POST">
+        <h1 id="closeContact" onclick="closeContact()">X</h1>
+        <h1>Get in Touch</h1>
+
+        <label for="Email">Email</label><br>
+        <input type="email" name="email" placeholder="Email Address"><br>
+      
+        <label for="Phn">Phn (Optional)</label><br>
+        <input type="text" id="Phn" placeholder="Phone no"><br>
+
+        <label for="name">Username</label><br>
+        <input type="text" id="name" placeholder="Username" name="name" required><br>
+
+        <label for="message">Message</label><br>
+        <textarea name="message" id="message" cols="70" rows="2" placeholder="What can I do for you.." required></textarea><br>
+
+        <input type="hidden" name="_captcha" value="false">
+
+        <input type="hidden" name="_subject" value="From YourPortfolio!">
+        
+        <input type="hidden" name="_template" value="box">
+
+        <button type="submit">Send</button>
+      </form>
+    </div>
     <header>
       <nav>
         <h1 class="logo"><a href="" class="logo">Wali</a></h1>
@@ -68,6 +94,7 @@
             projects to Improve my skills for full-time projects
           </h4>
         </div>
+        <button id="contactBtn" onclick="contactSection()">Contact</button>
       </div>
 
       <div class="intro2">
@@ -76,23 +103,6 @@
     </section>
     <hr />
   </body>
-
-  <script>
-    let preloader = document.querySelector(".preloader");
-    let offline = document.querySelector(".offline");
-
-    setInterval(check,1000)
-    function check() {
-      let status = navigator.onLine;
-      if (!status) {
-        offline.style.display = "block";
-      }
-      else {
-        offline.style.display = "none";
-      }
-    }
-    window.addEventListener("load", function () {
-      preloader.style.display = "none";
-    });
-  </script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="script.js"></script>
 </html>
