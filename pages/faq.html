@@ -14,6 +14,7 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="preloader"></div>
     <header>
         <nav>
           <h1 class="logo"><a href="" class="logo">Wali</a></h1>
@@ -51,6 +52,10 @@
             <span class="A">I am available in both freelance and full-time projects</span>
         </div>
     </div>
-    <script src="../static/about.js"></script>
 </body>
+<script>
+    window.addEventListener("load", function () {
+        preloader.style.display = "none";
+      });
+</script>
 </html>

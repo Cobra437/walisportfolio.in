@@ -39,3 +39,8 @@
     color: #0c2130;
     text-decoration: none;
 }
+@media screen and (max-width: 500px){
+    body{
+        padding-top: 15%;
+    }
+}

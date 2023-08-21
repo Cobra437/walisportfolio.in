@@ -221,16 +221,19 @@ nav a {
     font-size: 4vw;
   }
   #contactBtn{
-    position: fixed;
-    margin-top: 50%;
-    font-size: 4vw;
+    position: absolute;
+    bottom: 20%;
+    font-size: 3vh;
   }
   .contact{
-    height: 50px !important;
-    width: 100%;
-    margin-top: 30%;
+    position: absolute;
+    top: 30%;
+    min-height: unset;
+    height: 50px;
   }
   .contact form{
-    height: 50px !important;
+    min-height: unset;
+    height: 30vh;
+    font-size: 1vh;
   }
 }
